@@ -48,12 +48,19 @@ public class BasicJavaTest {
     int p = maxa.avgarray(w);
     System.out.println(p);
 }
-*/
+
         BasicJava basic9 = new BasicJava();
         int num11 = 1;
         int num12 = 256;
         ArrayList<Object> i = basic9.arrayOddNumbers(num11, num12);
         System.out.println(i);
         System.out.println("basic9");
+}
+*/
+        BasicJava basic10 = new BasicJava();
+        int[] inputarray = {1, 3, 5, 7};
+        int yvalue = 3;
+        int n = basic10.arrayGreater(inputarray, yvalue);
+        System.out.println(n); 
 }
 }
