@@ -62,9 +62,47 @@ public class BasicJava {
         }
         return count;
     }
+    public int[] valueSquare(int[] numberset){
+       for (int i =0; i < numberset.length; i++){
+           numberset[i] = numberset[i] * numberset[i];
+       }
+       return numberset;
+    }
+    public int[] elimNegative(int[] numbersets){
+        for (int i=0; i<numbersets.length; i++){
+            if( numbersets[i] < 0 ){
+                numbersets[i] = 0;
+            }
+        }
+        return numbersets;
+    }
+    public ArrayList<Object>  maxminavg(int[] numbersett){
+        ArrayList<Object> arrt = new ArrayList<Object>();
+        int maximum = numbersett[0];
+        int minimum = numbersett[0];
+        int summation = 0;
+        int average = 0;
+        for (int i=0; i<numbersett.length; i++){
+            summation += numbersett[i];
+            if(numbersett[i] > maximum) {
+                maximum = numbersett[i];
+            }
+            if(numbersett[i] < minimum){
+                minimum = numbersett[i];
+            }
+        } 
+        average = summation/numbersett.length;
+        arrt.add(maximum);
+        arrt.add(minimum);
+        arrt.add(average);
+        return arrt;
+    }
+    public ArrayList<Object> shiftyOne(int[] arrayfinal){
+        ArrayList<Object> arrx = new ArrayList<Object>();
+        for (int i=1; i < arrayfinal.length; i++){
+            arrx.add(arrayfinal[i]);
+        }
+        arrx.add(0);
+        return arrx;
+    }
 }
-//Write a method that takes an array and returns the number of values in
-// that array whose value is greater than a given value y. 
-//For example, if array = [1, 3, 5, 7] and y = 3,
-// after your method is run it will print 2 (since there are two values in the array that are greater than 3).
-

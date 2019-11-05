@@ -56,11 +56,34 @@ public class BasicJavaTest {
         System.out.println(i);
         System.out.println("basic9");
 }
-*/
         BasicJava basic10 = new BasicJava();
         int[] inputarray = {1, 3, 5, 7};
         int yvalue = 3;
         int n = basic10.arrayGreater(inputarray, yvalue);
         System.out.println(n); 
+}
+
+        BasicJava basic11 = new BasicJava();
+        int[] inputsarray = {1, 5, 10, -2};
+        int[] r = basic11.valueSquare(inputsarray);
+        System.out.println(Arrays.toString(r));
+}
+
+        BasicJava basic12 = new BasicJava();
+        int[] inputtt = {1, 5, 10, -2};
+        int[] q = basic12.elimNegative(inputtt);
+        System.out.println(Arrays.toString(q));
+}
+
+        BasicJava basic13 = new BasicJava();
+        int[] inputty = {1, 2, 3};
+        ArrayList<Object> xt = basic13.maxminavg(inputty);
+        System.out.println(xt);
+}
+*/
+        BasicJava basic14 = new BasicJava();
+        int[] shifty = {1, 5, 10, 7, -2};
+        ArrayList<Object> ss = basic14.shiftyOne(shifty);
+        System.out.println(ss);
 }
 }
